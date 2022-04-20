@@ -30,7 +30,7 @@ javascript: (() => {
         const link = document.createElement('a');
         const profileNameObj = document.querySelector('.e1e1d') || document.querySelector('.XBGH5 > h2');
         const profileName = profileNameObj?.textContent || window.location.href.split('.com/')[1].replace('/','');
-        const fileName = profileName + count;
+        const fileName = profileName + count + '.png';
         console.log('Filename ->', fileName);
         link.href = imageURL;
         link.download = fileName;
